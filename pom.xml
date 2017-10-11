@@ -93,6 +93,12 @@
             <artifactId>workflow-job</artifactId>
             <version>2.3</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.jenkins-ci.plugins.workflow</groupId>
+                    <artifactId>workflow-step-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency> <!-- FilePathUtils -->
             <groupId>org.jenkins-ci.plugins.workflow</groupId>
@@ -111,12 +117,24 @@
             <artifactId>workflow-basic-steps</artifactId>
             <version>2.1</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.jenkins-ci.plugins.workflow</groupId>
+                    <artifactId>workflow-step-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-cps</artifactId>
             <version>2.14</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.jenkins-ci.plugins.workflow</groupId>
+                    <artifactId>workflow-step-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins.workflow</groupId>
